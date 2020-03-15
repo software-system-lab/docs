@@ -1,0 +1,12 @@
+# Mac OS
+.DS_Store
+
+# PDF Latex
+build
+*.aux
+*.fdb_latexmk
+*.fls
+*.pdf
+*.synctex.gz
+*.log
+*.toc
