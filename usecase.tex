@@ -1,7 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 
 \usepackage{CJKutf8}
-\renewcommand*\baselinestretch{1.5}\selectfont
 \title{Timelog}
 \author{105820009 汪秉沄\\
 108598074 顏翊純\\
@@ -56,12 +55,33 @@
           \item Primary Actor: User
           \item Stakeholders and Interests:
             \begin{itemize}
-              \item \bf{Member}: To distinguish my logs of time from other users.
+              \item {\bf User}: Wants to enter the system.
             \end{itemize}
           \item Preconditions: User should register account first.
           \item Success Guarantee:
+            \begin{itemize}
+              \item User enter the system.
+            \end{itemize}
           \item Main Success Scenario:
+            \begin{enumerate}
+              \item User give the right login information.
+              \item User enter the system.
+            \end{enumerate}
           \item Extensions:
+            \begin{enumerate}
+              \item If user give the wrong login information.
+                \begin{enumerate}
+                  \item System should reject login.
+                \end{enumerate}
+              \item If user select login with Facebook.
+                \begin{enumerate}
+                  \item System should direct to the Facebook login page.
+                \end{enumerate}
+              \item If user select login with Github.
+                \begin{enumerate}
+                  \item System should direct to the Github login page.
+                \end{enumerate}
+            \end{enumerate}
           \item Special Requirements:
           \item Technology and Data Variations List:
           \item Frequency of Occurrence:
