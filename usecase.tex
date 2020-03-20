@@ -48,24 +48,51 @@
           \item Frequency of Occurrence:
           \item Miscellaneous:
         \end{itemize}
-      \item Login to Timelog.
+      \item Manage user account.
         \begin{itemize}
           \item Scope: Account Management System
           \item Level: User-goal
           \item Primary Actor: User
           \item Stakeholders and Interests:
             \begin{itemize}
-              \item {\bf User}: Wants to enter the system.
+              \item {\bf Member}: A teammeber wants to login to Timelog to record and maintain their own logs.
+              \item {\bf Manager}: A manager wants to be able to maintain the members of team, and see teammebers' timelog report.
+              \item {\bf Organization}: With several teams in an organization, we a group to association with user account to maintain the members easily.
             \end{itemize}
-          \item Preconditions: User should register account first.
+          \item Preconditions: None.
           \item Success Guarantee:
             \begin{itemize}
-              \item User enter the system.
+              \item User register account
+              \item User login to system.
+              \item Logs are distinguished by users identity.
+              \item Manager maintain users of the team.
+              \item Users see the logs reports of other team members of the same team.
             \end{itemize}
           \item Main Success Scenario:
             \begin{enumerate}
-              \item User give the right login information.
-              \item User enter the system.
+              \item User enter Timelog system.
+              \item If user never logined, direct user to login page.
+              \item If it's first time the user enter, user will register an account.
+              \item User select a login method to login to system.
+                \begin{itemize}
+                  \item {\bf FB login}
+                    \begin{enumerate}
+                      \item Redirect user to FB login page.
+                      \item User enter Facebook account info to login.
+                    \end{enumerate}
+                  \item {Google login}
+                    \begin{enumerate}
+                      \item Redirect user to Google login page.
+                      \item User enter Google account info to login.
+                    \end{enumerate}
+                  \item {\bf Github login}
+                    \begin{enumerate}
+                      \item Redirect user to Github login service.
+                      \item User enter Github account info to login.
+                    \end{enumerate}
+                \end{itemize}
+              \item Redirect back to Timelog page.
+              \item User logined to timelog.
             \end{enumerate}
           \item Extensions:
             \begin{enumerate}
