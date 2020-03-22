@@ -266,14 +266,57 @@
             \begin{itemize}
               \item {\bf User}: User needs activity type
             \end{itemize}
-          \item Preconditions:
+          \item Preconditions: User logined to Timelog.
           \item Success Guarantee:
-          \item Main Success Scenario:
+            \begin{itemize}
+              \item User add an Activity Type
+              \item User edit an Activity Type
+              \item User delete an Activity Type
+            \end{itemize}
+          \item Main Success Scenario: User add an activity type.
+            \begin{enumerate}
+              \item User logins to Timelog
+              \item User enters Activity Type management page
+              \item User inputs information for new Activity Type.
+              \item User triggers "add" command.
+              \item The new Activity Type added to user's account.
+            \end{enumerate}
           \item Extensions:
+            \begin{itemize}
+              \item At any time, if user leaves setting page, the add operation is canceled.
+              \item User edits an Activity Type.
+                \begin{enumerate}
+                  \item User logins to timelog.
+                  \item User enters Activity Type management page.
+                  \item User selects an existed Activity Type.
+                  \item User gives an edit command.
+                  \item User updates new informations for the type.
+                  \item User gives an update command.
+                  \item The selected Activity Type is updated.
+                \end{enumerate}
+              \item User deletes an Activity Type.
+                \begin{enumerate}
+                  \item User logins to timelog.
+                  \item User enters Activity Type management page.
+                  \item User selects an existed Activity Type.
+                  \item User gives an delete command.
+                  \item The selected Activity Type is deleted.
+                \end{enumerate}
+            \end{itemize}
           \item Special Requirements:
+            \begin{itemize}
+              \item The users should be able to open Activity Type management while adding a new log, to simplify the add log process.
+            \end{itemize}
           \item Technology and Data Variations List:
-          \item Frequency of Occurrence:
+            \begin{itemize}
+              \item Activity Type management can either be a page, user selects the management subpage, or a popup window, user triggers while adding a log.
+            \end{itemize}
+          \item Frequency of Occurrence: Mostly few month or even years, according to the life event of the user.
           \item Miscellaneous:
+            \begin{itemize}
+              \item What information should we have except for type name?
+              \item Is there a limit for number of activities?
+            \end{itemize}
         \end{itemize}
       \item User export HTML to FTP server.
       \item User manage profile.
