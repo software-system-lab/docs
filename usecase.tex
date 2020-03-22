@@ -204,7 +204,74 @@
           \item Miscellaneous: None
         \end{itemize}
       \item System generates report.
+        \begin{itemize}
+          \item Scope: Timelog System
+          \item Level: User-goal
+          \item Primary Actor: Timelog System
+          \item Stakeholders and Interests:
+            \begin{itemize}
+              \item {\bf User}: User see the report of selected period or timebox, so he/she can know how did his/her time have been spent.
+              \item {\bf Manager}: Manager wants to see the the time allocation of his/her team members, to analysis the working quality of the team.
+            \end{itemize}
+          \item Preconditions:
+            \begin{itemize}
+              \item Log added.
+              \item Activity types added.
+              \item Timebox created.
+              \item Goal of activities set.
+            \end{itemize}
+          \item Success Guarantee:
+            \begin{itemize}
+              \item Pie chart and table report generated.
+              \item the data of report is in the range of selected period/Timebox
+              \item Goal complete rate report generated.
+            \end{itemize}
+          \item Main Success Scenario:
+            \begin{enumerate}
+              \item User's operations satisfied all preconditions.
+              \item System generates the report according to Timebox, activity types, goal, and logs.
+              \item Reports showed on web page.
+            \end{enumerate}
+          \item Extensions:
+            \begin{enumerate}
+              \item Report without goal.
+                \begin{enumerate}
+                  \item If user didn't set goal for current Timebox.
+                  \item System generates the report accoring to Timebox, activity types, and logs(wihtout goal).
+                  \item Reports showed on web page (wihtout goal).
+                \end{enumerate}
+            \end{enumerate}
+          \item Special Requirements:
+            \begin{enumerate}
+              \item User can specify a period, instead of Timebox to generate report.
+            \end{enumerate}
+          \item Technology and Data Variations List:
+            \begin{itemize}
+              \item Duration of report could be Timebox, or user selected period.
+              \item Goal report showed only if user sets at least one goal.
+            \end{itemize}
+          \item Frequency of Occurrence: Every time user add a new log.
+          \item Miscellaneous:
+            \begin{itemize}
+              \item Should we provide more than one chart rather than pie chart only?
+              \item What information to show on report?
+            \end{itemize}
+        \end{itemize}
       \item User "CRUD" Activity Type.
+        \begin{itemize}
+          \item Scope:
+          \item Level:
+          \item Primary Actor:
+          \item Stakeholders and Interests:
+          \item Preconditions:
+          \item Success Guarantee:
+          \item Main Success Scenario:
+          \item Extensions:
+          \item Special Requirements:
+          \item Technology and Data Variations List:
+          \item Frequency of Occurrence:
+          \item Miscellaneous:
+        \end{itemize}
       \item User export HTML to FTP server.
       \item User manage profile.
       \item User "CRUD" timebox.
