@@ -150,7 +150,62 @@
                 \end{itemize}
             \end{itemize}
         \end{itemize}
-      \item User "CRUD" a log.
+      \item User manage logs.
+        \begin{itemize}
+          \item Scope: Timelog system
+          \item Level: User-goal
+          \item Primary Actor: user
+          \item Stakeholders and Interests:
+            \begin{itemize}
+              \item {\bf User}: User wants to record his/her life activities to monitor him/her self time usage to improve his/her time management.
+            \end{itemize}
+          \item Preconditions:
+            \begin{itemize}
+              \item User logined
+              \item User set activity types.
+            \end{itemize}
+          \item Success Guarantee:
+            \begin{itemize}
+              \item User record a log to the system.
+              \item User edit a log in the system.
+              \item User delete a log in the system.
+            \end{itemize}
+          \item Main Success Scenario: User record a log.
+            \begin{enumerate}
+              \item User logined to Timelog.
+              \item User send "Record Log" command
+              \item User input informations needed for a log.
+                \begin{itemize}
+                  \item Title
+                  \item Time period
+                  \item Activity Type
+                  \item Description
+                \end{itemize}
+            \end{enumerate}
+          \item Extensions:
+            \begin{enumerate}
+              \item User edit log.
+                \begin{enumerate}
+                  \item User select an incorrect log.
+                  \item User inputs the new information of log.
+                  \item User update the selected log.
+                \end{enumerate}
+              \item User delete a log
+                \begin{enumerate}
+                  \item User select a log.
+                  \item User delete the selected log.
+                \end{enumerate}
+            \end{enumerate}
+          \item Special Requirements: None
+          \item Technology and Data Variations List:
+            \begin{itemize}
+              \item Start Time and End Time of a log to calculate time period.
+              \item Activity type to classify logs.
+              \item Description of log.
+            \end{itemize}
+          \item Frequency of Occurrence: an hour to a day.
+          \item Miscellaneous: None
+        \end{itemize}
       \item System generates report.
       \item User "CRUD" Activity Type.
       \item User export HTML to FTP server.
