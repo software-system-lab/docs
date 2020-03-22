@@ -51,7 +51,7 @@
       \item Manage user account.
         \begin{itemize}
           \item Scope: Account Management System
-          \item Level: User-goal
+          \item Level: subfunction
           \item Primary Actor: User
           \item Stakeholders and Interests:
             \begin{itemize}
@@ -136,9 +136,8 @@
             \end{enumerate}
           \item Technology and Data Variations List:
             \begin{enumerate}
-              \item User login with third part login service will need third part identity for the user.
-              \item User's identity token for Timelog service.
-              \item Store user's identity token on client browser to achieve auto login.
+              \item User can login through thee kinds of third part login, including Facebook, Google, and Github.
+              \item A user may have role in a team, manager or normal member, with different authority to team management
             \end{enumerate}
           \item Frequency of Occurrence: Every time an user wants to use Timelog.
           \item Miscellaneous:
@@ -199,9 +198,7 @@
           \item Special Requirements: None
           \item Technology and Data Variations List:
             \begin{itemize}
-              \item Start Time and End Time of a log to calculate time period.
-              \item Activity type to classify logs.
-              \item Description of log.
+              \item Activity types are several types defined by the user.
             \end{itemize}
           \item Frequency of Occurrence: an hour to a day.
           \item Miscellaneous: None
