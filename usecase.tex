@@ -318,7 +318,45 @@
               \item Is there a limit for number of activities?
             \end{itemize}
         \end{itemize}
-      \item User export HTML to FTP server.
+      \item Export report to FTP server.
+        \begin{itemize}
+          \item Scope: Timelog System
+          \item Level: subfunction
+          \item Primary Actor: User
+          \item Stakeholders and Interests:
+            \begin{itemize}
+              \item {\bf User}: User export and upload the report to the shared FTP server, so other members of the organization can see the log.
+              \item {\bf Manager}: An organization manager can see the reports of members on a manual service based on an FTP server.
+              \item {\bf Organization}: We can have a self hosted FTP server to record all the reports of organization members.
+            \end{itemize}
+          \item Preconditions:
+            \begin{itemize}
+              \item User set acitivty types
+              \item User add logs
+              \item User set Timebox
+              \item User set goal(Not required)
+            \end{itemize}
+          \item Success Guarantee: The report is generated an uploaded to FTP server.
+          \item Main Success Scenario: Report exported and uploaded to FTP server.
+            \begin{itemize}
+              \item User logins to Timelog
+              \item User selects an Timebox
+              \item User gives export command
+              \item User sets FTP server authorization info.
+              \item The system generates an report and uploads to the specified FTP server.
+            \end{itemize}
+          \item Extensions: None
+          \item Special Requirements:
+            \begin{itemize}
+              \item If user exported a report before, the system should auto fill the FTP info for the user.
+            \end{itemize}
+          \item Technology and Data Variations List:
+            \begin{itemize}
+              \item Upload can through either FTP or FTPs protocol.
+            \end{itemize}
+          \item Frequency of Occurrence: Weekly or monthly, according to the organization's policy.
+          \item Miscellaneous: None
+        \end{itemize}
       \item User manage profile.
       \item User "CRUD" timebox.
       \item User "CURD" goal of timebox.
