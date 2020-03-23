@@ -28,15 +28,18 @@
   \subsection{Problem Statement}
 
   \subsection{System Context Diagram}
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=\linewidth]{img/Context_Diagram.png}
+    \end{figure}
 
   \subsection{Summary of System Feature}
 
   \subsection{Use Case Diagram}
-    \subsubsection{Manage user account}
-      \begin{figure}[h!]
-        \centering
-        \includegraphics[width=\linewidth]{img/usecase_diagram/manage_user_account.png}
-      \end{figure}
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[width=\linewidth]{img/usecase_diagram/Usecase_diagram.png}
+    \end{figure}
 
   \subsection{Use Cases}
     \begin{enumerate}
@@ -641,11 +644,22 @@
         \end{itemize}
     \end{enumerate}
   \subsection{Non-functional Requirements and Constraints}
-
+    \begin{itemize}
+      \item Page switch time should less than 3 seconds.
+      \item Backend response time should less than 1 seconds.
+      \item report generate time should less than 1 seconds.
+      \item All user identity transmited between server and client should be access token.
+    \end{itemize}
+    \begin{itemize}
+      \item Browser that support ex5 plus.
+    \end{itemize}
   \subsection{Glossary}
 
   \subsection{Software Environments}
-
+    \begin{itemize}
+      \item Java JDK 1.8
+      \item React.js
+    \end{itemize}
 \section{The Previous Project Information}
   \subsection{Use case diagram}
 
