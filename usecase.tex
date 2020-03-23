@@ -29,7 +29,7 @@
     \indent context diagram added,\\
     \indent Non-functional Requirements and Constraints,\\
   3/22 Four use cases added\\
-  3/10 Problem Statement added\\
+  3/10 Problem Statement added
 
   \subsection{Problem Statement}
   \paragraph{}
@@ -38,8 +38,10 @@
 
 因此我們希望開發一套 Scrum 管理系統，提供一個流程動態視覺化的介 面，幫助團隊不只記錄，更可以將他們的開發流程更好的視覺化，讓新手可以 快速地理解 Scrum 的各個流程活動;老手也能輕易掌握 Scrum 運行的狀況。此 外，這個系統也需要提供數個虛擬化的 Scrum 常用工具，並提供使用者客製化 的彈性空間，使其更貼近各個團隊的使用狀況。而前述的所有軟體都缺乏一個 完整的 Dash Board 介面，讓使用者始終無法真正脫離實際的 Task Board、 Burndown Chart 等工具;因此這套系統需要提供這樣的介面，讓 Scrum 的流程 管理可以真正的虛擬化。
 
+  \newpage
+
   \subsection{System Context Diagram}
-    \begin{figure}[h!]
+    \begin{figure}[!htbp]
       \centering
       \includegraphics[width=\linewidth]{img/Context_Diagram.png}
     \end{figure}
@@ -53,11 +55,14 @@
       \item User's goal to help to improve user's time allocation.
     \end{itemize}
 
+  \newpage
+
   \subsection{Use Case Diagram}
-    \begin{figure}[h!]
+    \begin{figure}[!htbp]
       \centering
-      \includegraphics[width=\linewidth]{img/usecase_diagram/Usecase_diagram.png}
+      \includegraphics[height=17cm]{img/usecase_diagram/Usecase_diagram.png}
     \end{figure}
+    \newpage
 
   \subsection{Use Cases}
     \begin{enumerate}
@@ -657,6 +662,13 @@
       \item Browser that support ex5 plus.
     \end{itemize}
   \subsection{Glossary}
+  \begin{itemize}
+    \item {\bf log}: The user's time record according to the events happen in real life.
+    \item {\bf Timebox}: A special time period specified by user to generate the report of the duration that user interested in.
+    \item {\bf activity type}: The activity type is the type to classifies user's life events.
+    \item {\bf goal}: The target hour to achieve of an activity type which specified by a user in a Timebox.
+    \item {\bf log report}: A report parse the logs in the selected Timebox, and generates a pie chart. A report should contains goal achievement if one or more goals are set in the selected Timebox.
+  \end{itemize}
 
   \subsection{Software Environments}
     \begin{itemize}
@@ -665,6 +677,17 @@
     \end{itemize}
 
 \section{Measurement}
+3/15 18:00~19:00\\
+3/19 19:00~19:46\\
+3/19 21:30~23:00\\
+3/20 21:30~23:14\\
+3/22 12:00~12:30\\
+3/22 13:00~17:50\\
+3/23 07:00~08:40\\
+3/23 09:30~12:30\\
+3/23 13:00~14:40\\
+3/23 20:00~24:00\\
+3/24 00:00~13:30
 
 
 \end{CJK*}
