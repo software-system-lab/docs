@@ -32,7 +32,7 @@
   \subsection{Use Case Diagram}
 
   \subsection{Use Cases}
-    \begin{itemize}
+    \begin{enumerate}
       \item {{Template item}}
         \begin{itemize}
           \item Scope:
@@ -48,7 +48,7 @@
           \item Frequency of Occurrence:
           \item Miscellaneous:
         \end{itemize}
-      \item Manage user account.
+      \item Manage user account
         \begin{itemize}
           \item Scope: Account Management System
           \item Level: subfunction
@@ -149,7 +149,7 @@
                 \end{itemize}
             \end{itemize}
         \end{itemize}
-      \item User manage logs.
+      \item User manage logs
         \begin{itemize}
           \item Scope: Timelog system
           \item Level: User-goal
@@ -203,7 +203,7 @@
           \item Frequency of Occurrence: an hour to a day.
           \item Miscellaneous: None
         \end{itemize}
-      \item System generates report.
+      \item System generates report
         \begin{itemize}
           \item Scope: Timelog System
           \item Level: User-goal
@@ -257,7 +257,7 @@
               \item What information to show on report?
             \end{itemize}
         \end{itemize}
-      \item User manage Activity Type.
+      \item User manage Activity Type
         \begin{itemize}
           \item Scope: Timelog System
           \item Level: User-goal
@@ -318,7 +318,7 @@
               \item Is there a limit for number of activities?
             \end{itemize}
         \end{itemize}
-      \item Export report to FTP server.
+      \item Export report to FTP server
         \begin{itemize}
           \item Scope: Timelog System
           \item Level: subfunction
@@ -357,7 +357,7 @@
           \item Frequency of Occurrence: Weekly or monthly, according to the organization's policy.
           \item Miscellaneous: None
         \end{itemize}
-      \item User manage profile.
+      \item User manage profile
         \begin{itemize}
           \item Scope: Account Management service
           \item Level: subfunction
@@ -391,7 +391,7 @@
           \item Frequency of Occurrence: Rare, only if personal information changed.
           \item Miscellaneous: None
         \end{itemize}
-      \item Maintain Timebox.
+      \item Maintain Timebox
         \begin{itemize}
           \item Scope: Timelog service
           \item Level: User-goal
@@ -433,14 +433,51 @@
           \item Frequency of Occurrence: Weekly, two weeks a time, monthly, etc. According to user's habbit or organization's policy.
           \item Miscellaneous: None
         \end{itemize}
-      \item User "CURD" goal of timebox.
+      \item Maintain goal of timebox
+        \begin{itemize}
+          \item Scope: Timelog System
+          \item Level: user-goal
+          \item Primary Actor: User
+          \item Stakeholders and Interests:
+            \begin{itemize}
+              \item {\bf User}: A user sets goal of a Timebox for each activity to visualize user's time allocation quality, and help user to improve their time allocation eventually.
+            \end{itemize}
+          \item Preconditions:
+            \begin{itemize}
+              \item User defined activity types.
+              \item User set a Timebox
+            \end{itemize}
+          \item Success Guarantee:
+            \begin{itemize}
+              \item User set goals for several activities.
+              \item Goal achievement of each activity be shown on the report.
+            \end{itemize}
+          \item Main Success Scenario:
+            \begin{enumerate}
+              \item User selects a Timebox
+              \item User gives "Set goals" command
+              \item User define the goal hour of each activities.
+              \item After that, the system will add goal achievement to the report of the selected Timebox.
+            \end{enumerate}
+          \item Extensions: None
+          \item Special Requirements: None
+          \item Technology and Data Variations List:
+            \begin{itemize}
+              \item A goal of an activity can either be a positive value, the hour of goal is set, or 0, no goal for the activity; a negitive value is not acceptable.
+            \end{itemize}
+          \item Frequency of Occurrence: Every time a new Timebox created.
+          \item Miscellaneous:
+            \begin{itemize}
+              \item Despite hour goal, is there any other good measurement for goal to visualize user's time allocation quality?
+            \end{itemize}
+        \end{itemize}
       \item Team member see the report of whole team \& other members.
       \item Manager add/delete member to group.
       \item manger "CRUD" sub team.
       \item Admin set role to users.
       \item Manager set goal for team.
       \item User set background color.
-    \end{itemize}
+    \end{enumerate}
 
   \subsection{Non-functional Requirements and Constraints}
 
