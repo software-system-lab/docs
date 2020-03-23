@@ -391,7 +391,48 @@
           \item Frequency of Occurrence: Rare, only if personal information changed.
           \item Miscellaneous: None
         \end{itemize}
-      \item User "CRUD" timebox.
+      \item Maintain Timebox.
+        \begin{itemize}
+          \item Scope: Timelog service
+          \item Level: User-goal
+          \item Primary Actor: User
+          \item Stakeholders and Interests:
+            \begin{itemize}
+              \item {\bf User}: A user needs a Timebox to get the reports in the period that he/she is interested.
+              \item {\bf Manager}: A manager wants to check the team members' log reports in a constant pace iteratively.
+            \end{itemize}
+          \item Preconditions:
+            \begin{itemize}
+              \item User login to Timelog.
+            \end{itemize}
+          \item Success Guarantee:
+            \begin{itemize}
+              \item User sets up an Timebox.
+              \item System generates report according to the Timebox.
+            \end{itemize}
+          \item Main Success Scenario: A Timebox defined
+            \begin{enumerate}
+              \item User enters Timelog system.
+              \item User gives "Create Timebox" command.
+              \item User inputs name, description, and period of iteration.
+              \item User gives Create command.
+              \item Timebox created.
+            \end{enumerate}
+          \item Extensions:
+            \begin{itemize}
+              \item User changes current Timebox, the system should generates report according to the new selected Timebox.
+            \end{itemize}
+          \item Special Requirements:
+            \begin{itemize}
+              \item The start date of Timebox should not overlap the end date.
+            \end{itemize}
+          \item Technology and Data Variations List:
+            \begin{itemize}
+              \item Despite specifying a static long term Timebox, user can simply select a period of time as temporary Timebox.
+            \end{itemize}
+          \item Frequency of Occurrence: Weekly, two weeks a time, monthly, etc. According to user's habbit or organization's policy.
+          \item Miscellaneous: None
+        \end{itemize}
       \item User "CURD" goal of timebox.
       \item Team member see the report of whole team \& other members.
       \item Manager add/delete member to group.
